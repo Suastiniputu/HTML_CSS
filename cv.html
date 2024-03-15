@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum Vitae</title>
 </head>
     <style>
         body{
-            font-family: Arial, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
         header{
             background-color: #aad8e8;
@@ -39,21 +39,44 @@
             padding: 10px;
             text-align: center;
         }
+        .button {
+            background-color: rgb(83, 83, 199);
+            color: whitesmoke;
+        }
+        #paragraf {
+            font-style: Lucida, sans-serif;
+            color: rgb(172, 136, 145);
+        }
+        a[href^="https://"] {
+            color: rgb(12, 238, 76);
+        }
+        .zoom:hover {
+            transform: scale(1.2);
+            color: blue;
+        }
+        p::first-letter {
+            font-size: 150%;
+            color: #000000;
+        }
+        .head {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
     </style>
 <body>
     <header>
         <h1>Ni Putu Suastini</h1>
-        <p>Web Developer | Grapich Designer</p>
+        <h5 class="head">Web Developer | Grapich Designer</h5>
     </header>
     <nav>
         <ul>
-            <li><a href="#biodata">Biodata</a></li>
-            <li><a href="#pendidikan">Pendidikan</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#biodata" class="button">Biodata</a></li>
+            <li><a href="#pendidikan" class="button">Pendidikan</a></li>
+            <li><a href="#skills" class="button">Skills</a></li>
         </ul>
     </nav>
     <section id="biodata">
-        <h2>Biodata Diri</h2>
+        <h2 id="paragraf">Biodata Diri</h2>
         <p>Nama : Ni Putu Suastini</p>
         <p>Email : psuastini28@gmail.com</p>
         <p>Tempat Lahir : Bangli</p>
@@ -61,19 +84,19 @@
         <p>Pendidikan yang sedang ditempuh : S1 Teknologi </p>
     </section>
     <section id="pendidikan">
-        <h2>Pendidikan</h2>
+        <h2 id="paragraf">Pendidikan</h2>
         <ul>
-            <li>Sekolah Dasar Negeri 3 Bangbang</li>
-            <li>Sekolah Menengah Pertama Wiyata Yadnya Gianyar</li>
-            <li>Sekolah Menengah Kejuruan Negeri 1 Gianyar</li>
+            <li class="zoom">Sekolah Dasar Negeri 3 Bangbang</li>
+            <li class="zoom">Sekolah Menengah Pertama Wiyata Yadnya Gianyar</li>
+            <li class="zoom">Sekolah Menengah Kejuruan Negeri 1 Gianyar</li>
         </ul>
     </section>
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 id="paragraf">Skills</h2>
         <p>HTML, CSS, JavaScript, Python</p>
     </section>
     <footer>
-        <p>Ikuti saya di social media: <a href="https://www.instagram.com/suastiniputu25">Instagram, <a href="psuastini28@gmail.com">Email</a></p>
+        <h6>Ikuti saya di social media: <a href="https://www.instagram.com/suastiniputu25">Instagram, <a href="psuastini28@gmail.com">Email</a></h6>
     </footer>
 </body>
 </html>
